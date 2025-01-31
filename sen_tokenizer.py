@@ -3,7 +3,9 @@ import nltk
 nltk.download('punkt')
 import re
 
-sentences = tokenize.sent_tokenize(BBC_Data[num]["content"])
+text = """test"""
+
+sentences = tokenize.sent_tokenize(text)
 pattern6 = r'(?<=[.?!])["\']?\s*(?=[A-Z])'
 
 for sen in range(0, len(sentences)):
