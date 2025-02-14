@@ -17,6 +17,7 @@ for sen in range(0, len(sentences)):
   if matches != []:
     sentences[sen] = re.split(r'(?<=[.?!])["\']?\s*(?=[A-Z])', sentences[sen])
 
+# Check if tokenized sents have been tokenized incorrectly
 new_text = []
 for sentt in range(0, len(sentences)):
   if type(sentences[sentt]) == list:
